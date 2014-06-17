@@ -1,0 +1,15 @@
+[>] It will be a decentralised system which will be platform independent.
+
+[>][>]Decentralised because i don't want any main program without which it will not work.
+
+[>][>]Platform Independent because i orignally wanted it run on a batch of rasperypi which would capable of doing all the task. But on latter due to problem i decided to currently do it my    system. Here is one more twist i have net connection on my phone so i have decided that i will run the spider on my android phone which will get the source code and push it to the GFS      (my laptop) and it will get links to crawl also from my laptop only thing it will do is to crawl and push the code. Well that is something of future at the first version i will try to      run everything in my laptop.
+
+--------------------------------------------------------------
+Components : 
+[  ] Global File System : It will store diffrent version of same file (means of same uri)
+[  ] Feeder : it will find the url worth crawling and pass it to the crawler on request and when done update the status of uri
+[  ] Crawler : It will get the URL from feeder and Crawl it and upload to gfs and notify feeder
+
+
+
+

@@ -1,0 +1,38 @@
+[ ] Should designed keeping in mind that 
+	[-] Any file:version can be deleted from HDD and database
+	[-] Any URI can have multiple version of file
+	[-] Separate UID for every file even if it is of same URI
+	[-] MD5, SHA hash of every file so that file can be compared for exact match
+	[-] Every record in DB must have a file associated with it.
+
+[ ] It will store file if the HDD and will have own dB which will contain reference of every file stored in it.
+	[-] dB and file will work together
+	[-] It will provide API to perform operation over the GFS
+	[-] API will in form of links
+	[-] Operation have to be supported
+		[-] Upload any file {return its UID}
+		[-] Query for a file {return list with UID and other details }
+		[-] Query for details or specific details of UID  { return the requested details of the UID }
+		[-] Read a File	uisng UID or URI:version { return the data of file with orginal header passed with prefix 'GFS-' }
+		[-] Delete any file with UID or any version of file with URI:version { return status Deleted,Version not found,Error.....}
+
+[ ] DB will have following details about the file.
+	[-] UID
+	[-] Uri
+	[-] date of retrieval
+	[-] file length
+	[=]
+	[-] response code
+	[-] status [ok, err network, blocked by robot.txt]
+	[-] content/type
+	[-] headers
+	[=]
+	[-] Protocol
+	[-] host name
+	[-] folders
+	[-] file name
+	[-] query
+
+[ ] Version : latest version will be represented by 0 and after it 1,2,3... goes on
+
+	
